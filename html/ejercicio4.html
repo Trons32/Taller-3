@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 4</title>
+</head>
+<body>
+
+    
+    
+  <form action="">
+      <table>
+           <tr>
+            <td>Accoun type :</td>
+            <td>
+                <input type="radio" name="radio" > Individual <br>
+                <input type="radio" name="radio" > Entity
+            </td>
+           </tr>
+           <tr>
+            <td>Firts Name :</td>
+            <td>
+                <input type="text" pattern="^(Mr|Ms|Mrs) \S+ \S+$" >
+            </td>
+           </tr>
+           <tr>
+            <td>Middle Name or Initial :</td>
+            <td>
+                <input type="text" pattern="^[A-Z][a-z]?$|^$" >
+            </td>
+           </tr>
+           <tr>
+            <td>Last Name :</td>
+            <td><input type="text" pattern="^(Mr|Ms|Mrs)\s+\S+(\s+\S+){1,2}$" ></td>
+           </tr>
+           <tr>
+            <td>Suffix :</td>
+            <td>
+                <select>
+                    <option selected disabled >--</option>
+                    <option value="">Mr</option>
+                    <option value="">Mrs</option>
+                    <option value="">Ms</option>
+                </select>
+            </td>
+           </tr>
+           <tr>
+            <td>Taxpayer identification numebr :</td>
+            <td>
+                <input type="text" size="2px" pattern="\d+" > - <input type="text" size="1px" pattern="\d+" > - <input type="text" size="3px" pattern="\d+" >
+            </td>
+           </tr>
+           <tr>
+            <td>
+                Date of Birth :
+            </td>
+            <td>
+                <input type="text" size="2"> -<input type="text" size="3" >-<input type="text" size="5">  (MM -- DD -- YYYY)
+            </td>
+           </tr>
+           <tr>
+            <td> <br> State Adress :</td>
+            <td> <br> <input type="text" > <br> <input type="text"> <br> <input type="text"> </td> 
+           </tr>
+           <tr>
+            <td> <br> City :</td>
+            <td>
+                <br>
+                <input type="text">
+            </td>
+           </tr>
+           <tr>
+            <td>State</td>
+            <td>
+                <select so >
+                    <option disabled selected >-- </option>
+                    <option value="">Amazonas</option>
+                    <option value="">Antioquia</option>
+                    <option value="">Arauca</option>
+                    <option value="">Atlántico</option>
+                    <option value="">Bogotá</option>
+                    <option value="">Bolívar</option>
+                    <option value="">Boyacá</option>
+                    <option value="">Caldas</option>
+                    <option value="">Caquetá</option>
+                    <option value="">Casanare</option>
+                    <option value="">Cauca</option>
+                    <option value="">Cesar</option>
+                    <option value="">Chocó</option>
+                    <option value="">Córdoba</option>
+                    <option value="">Cundinamarca</option>
+                    <option value="">Guainía</option>
+                    <option value="">Guaviare</option>
+                    <option value="">Huila</option>
+                    <option value="">La Guajira</option>
+                    <option value="">Magdalena</option>
+                    <option value="">Meta</option>
+                    <option value="">Nariño	</option>
+                    <option value="">Norte de Santander</option>
+                    <option value="">Putumayo</option>
+                    <option value="">Quindío</option>
+                    <option value="">Risaralda</option>
+                    <option value="">San Andrés y Providencia</option>
+                    <option value="">Santander</option>
+                    <option value="">Sucre</option>
+                    <option value="">Tolima</option>
+                    <option value="">Valle del Cauca</option>
+                    <option value="">Vaupés</option>
+                    <option value="">Vichada</option>
+                </select>
+            </td>
+           </tr>
+           <tr>
+            <td>Zip Code</td>
+            <td> <input type="text" size="3px" pattern="^\d{6}$" > - <input type="text" size="3px" pattern="^([0-9]{4})?$"  >  (Plus four - Optional) </td>
+           </tr>
+           <tr>
+            <td>Home Phone</td>
+            <td>
+                (<input type="text" size="3px" pattern="^\+\d{2}">) - <input type="text" size="3px" pattern="^\d{3}" > - <input type="text" size="3px" pattern="^\d{7}" >
+            </td>
+           </tr>
+           <tr>
+            <td>Driver"s License / State ID Number</td>
+            <td> <input type="text" pattern="^(D\d+)$" > </td>
+           </tr>
+
+           <tr>
+            <td>Issuing State</td>
+            <td>
+                <select >
+                    <option disabled selected >--</option>
+                </select>
+            </td>
+           </tr>
+           <tr>
+            <td>Expiration Date</td>
+            <td><input type="text" size="2" pattern="^[1-9]|1[0-2]$" > -<input type="text" size="3" pattern="^(0?[1-9]|[1-2][0-9]|3[0-1])$" >- <input type="text" size="5" pattern="^[2-9][0-9]{3,}$" >(MM -- DD -- YYYY)</td>
+           </tr>
+      </table>
+
+      <br><br><br>
+      <input type="submit" value="Submit" >
+
+  </form>
+
+</body>
+</html>
